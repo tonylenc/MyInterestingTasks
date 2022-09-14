@@ -17,7 +17,7 @@ def binary_search(seq, x):
     return -1
 
 
-def left_binary_search(seq, x):
+def left_binary_search(seq, x):  # (left, right]
     left = -1
     right = len(seq) - 1
 
@@ -32,7 +32,7 @@ def left_binary_search(seq, x):
     return right
 
 
-def right_binary_search(seq, x):
+def right_binary_search(seq, x):  # [right, left)
     left = 0
     right = len(seq)
 
