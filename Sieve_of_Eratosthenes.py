@@ -1,7 +1,5 @@
 def sieve(n):
-    prime_numbers = []
-    for i in range(n + 1):
-        prime_numbers.append(i)
+    prime_numbers = list(range(n + 1))
 
     prime_numbers[1] = 0
     i = 2
@@ -15,4 +13,5 @@ def sieve(n):
 
     prime_numbers = set(prime_numbers)
     prime_numbers.remove(0)
+    
     return sorted(prime_numbers)
